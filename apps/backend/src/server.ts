@@ -1,4 +1,7 @@
 import express from "express";
+import { SiteName } from "@shared";
+
+console.log("Using shared enum:", SiteName.AMAZON);
 
 const app = express();
 

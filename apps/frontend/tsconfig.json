@@ -19,7 +19,7 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@shared": ["../../packages/shared/index.ts"]
     }
   },
   "include": [
