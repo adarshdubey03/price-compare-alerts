@@ -1,16 +1,9 @@
-import express from "express";
-import { SiteName } from "@shared";
+import { createApp } from "./app"
 
-console.log("Using shared enum:", SiteName.AMAZON);
+const PORT = process.env.PORT || 4000
 
-const app = express();
-
-app.get("/health", (_req, res) => {
-  res.json({ status: "ok" });
-});
-
-const PORT = process.env.PORT || 4000;
+const app = createApp()
 
 app.listen(PORT, () => {
-  console.log(`Backend running on port ${PORT}`);
-});
+  console.log(`Backend running on port ${PORT}`)
+})

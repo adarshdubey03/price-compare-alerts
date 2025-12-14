@@ -1,7 +1,6 @@
 {
   "name": "@shared/shared",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
-  "main": "index.ts"
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts"
 }

@@ -11,7 +11,14 @@ export interface Listing {
   lastUpdated: string; // ISO date
 }
 
+export interface ProductComparisonMeta {
+  partial: boolean
+  sourceCount: number
+  fetchedAt: string // ISO
+}
+
 export interface ProductComparison {
-  query: string;
-  listings: Listing[];
+  query: string
+  listings: Listing[]
+  meta?: ProductComparisonMeta
 }
